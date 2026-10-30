@@ -113,33 +113,22 @@ function cleanVenueName(name) {
 
   // 出演アーティストを取得
   function getArtists() {
-    const selectors = [
-      '.artist a',
-      '.artists a',
-      '.performer a',
-      'a[href*="/artists/"]'
-    ];
+    const artists = [
+        ...document.querySelectorAll('h4.artistName2 a[href*="/artists/"]')
+    ]
+        .map(a => a.textContent.trim())
+        .filter(Boolean);
 
-    for (const selector of selectors) {
-      const elements = [
-        ...document.querySelectorAll(selector)
-      ];
+    return [...new Set(artists)];
+}function getArtists() {
+    const artists = [
+        ...document.querySelectorAll('h4.artistName2 a[href*="/artists/"]')
+    ]
+        .map(a => a.textContent.trim())
+        .filter(Boolean);
 
-      const names = [
-        ...new Set(
-          elements
-            .map(getText)
-            .filter(name => name && name.length < 100)
-        )
-      ];
-
-      if (names.length) {
-        return names;
-      }
-    }
-
-    return [];
-  }
+    return [...new Set(artists)];
+}
 
   // 公演情報をまとめる
   function collectEventData() {
