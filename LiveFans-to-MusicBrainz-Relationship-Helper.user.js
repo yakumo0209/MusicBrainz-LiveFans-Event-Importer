@@ -250,10 +250,10 @@
          return 'Venue';
 
        case 'artist':
-         return 'Main Performer';
+         return 'Performer';
 
        case 'series':
-         return 'Tour Series';
+         return 'Series';
 
        default:
          return task.kind;
