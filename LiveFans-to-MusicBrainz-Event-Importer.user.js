@@ -1,13 +1,15 @@
 // ==UserScript==
- // @name         MusicBrainz: LiveFans Event Importer
- // @namespace    https://www.livefans.jp/
- // @version      0.2.0
- // @description  LiveFansの公演情報・ツアー日程をMusicBrainzのイベント作成フォームへ渡す
- // @match        https://www.livefans.jp/events/*
- // @match        https://www.livefans.jp/groups/*
- // @grant        GM_openInTab
- // @run-at       document-idle
- // ==/UserScript==
+// @name         MusicBrainz: LiveFans Event Importer
+// @namespace    https://github.com/yakumo0209/MusicBrainz-LiveFans-Event-Importer
+// @version      0.2.0
+// @description  LiveFansの公演情報・ツアー日程をMusicBrainzのイベント作成フォームへ渡す
+// @match        https://www.livefans.jp/events/*
+// @match        https://www.livefans.jp/groups/*
+// @grant        GM_openInTab
+// @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/yakumo0209/MusicBrainz-LiveFans-Event-Importer/blob/main/LiveFans-to-MusicBrainz-Event-Importer.user.js
+// @downloadURL  https://raw.githubusercontent.com/yakumo0209/MusicBrainz-LiveFans-Event-Importer/blob/main/LiveFans-to-MusicBrainz-Event-Importer.user.js
+// ==/UserScript==
 
  (() => {
    'use strict';
