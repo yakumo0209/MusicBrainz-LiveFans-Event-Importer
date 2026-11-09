@@ -1,12 +1,15 @@
 // ==UserScript==
- // @name         LiveFans to MusicBrainz Relationship Helper
- // @namespace    https://musicbrainz.org/
- // @version      0.2.0
- // @description  LiveFansから渡された会場・出演者・ツアー名でMusicBrainzの関係行を追加する補助スクリプト
- // @match        https://musicbrainz.org/event/create*
- // @grant        none
- // @run-at       document-idle
- // ==/UserScript==
+// @name         LiveFans to MusicBrainz Relationship Helper
+// @namespace    https://github.com/yakumo0209/MusicBrainz-LiveFans-Event-Importer
+// @author       yakumo0209
+// @version      0.2.0
+// @description  LiveFansから渡された会場・出演者・ツアー名でMusicBrainzの関係行を追加する補助スクリプト
+// @match        https://musicbrainz.org/event/create*
+// @grant        none
+// @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/yakumo0209/MusicBrainz-LiveFans-Event-Importer/refs/heads/main/LiveFans-to-MusicBrainz-Relationship-Helper.user.js
+// @downloadURL  https://raw.githubusercontent.com/yakumo0209/MusicBrainz-LiveFans-Event-Importer/refs/heads/main/LiveFans-to-MusicBrainz-Relationship-Helper.user.js
+// ==/UserScript==
 
  (() => {
    'use strict';
